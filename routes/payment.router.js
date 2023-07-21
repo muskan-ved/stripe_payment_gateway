@@ -1,5 +1,6 @@
 const express = require("express");
 const { PaymentAccept, GetpaymentDetailsBycheckoutSessionIdPayment, CreateStripeAccount, StripeAccountLink, StripeAcceptPaymentGettingPercent, GetAllConnectedVendorsAccount, GetSessionAllPaymentInfo } = require("../controllers/stripeSessionController");
+const { StripeCreateCustomer, StripeCustomers } = require("../controllers/stripeReactPaymentController");
 
 const router = express.Router();
 router.post("/acceptpayment", PaymentAccept);
@@ -10,6 +11,8 @@ router.post("/stripeacceptpaymentgettingpercent", StripeAcceptPaymentGettingPerc
 router.post("/getallpaymentinfo", GetSessionAllPaymentInfo);
 router.get("/getallconnectedvendorsaccount", GetAllConnectedVendorsAccount);
 
+router.post("/createcustomer",StripeCreateCustomer);
+router.get("/getallcustomer",StripeCustomers);
 
 
 module.exports = router;
