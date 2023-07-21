@@ -1,0 +1,32 @@
+{
+  "name": "stripe_payment_gateway",
+  "version": "1.0.0",
+  "description": "stripe payment gateway and built in stripe connect ",
+  "main": "index.js",
+  "engines": {
+    "node": "19.4.0",
+    "npm": "9.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muskan-ved/stripe_payment_gateway.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muskan-ved/stripe_payment_gateway/issues"
+  },
+  "homepage": "https://github.com/muskan-ved/stripe_payment_gateway#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "stripe": "^12.13.0"
+  }
+}
